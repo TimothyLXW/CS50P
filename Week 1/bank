@@ -1,16 +1,10 @@
-def main():
-    answer = (input("Gretting: ")).lower().strip()
-    print(f"${value(answer)}")
+answer = input("Greeting: ")
 
+answer_2 = answer.lower().strip()
 
-def value(greeting):
-    if greeting.startswith("hello"):
-        return 0
-    elif greeting.startswith("h"):
-        return 20
-    else:
-        return 100
-
-
-if __name__ == "__main__":
-    main()
+if "hello" in answer_2:
+    print("$0")
+elif "h" == answer_2[0]:
+    print("$20")
+else:
+    print("$100")
